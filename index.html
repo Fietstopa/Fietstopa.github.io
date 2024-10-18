@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=§, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body onload="typeWriter()">
+    <div class="cursor-dot" data-cursor-dot></div>
+    <div class="cursor-outline" data-cursor-outline></div>
+    <div class="navbar">
+      <div class="containerr">
+        <div class="home">
+          <a href=""><p>Home</p></a>
+        </div>
+        <div class="about-me">
+          <a href=""><p>About me</p></a>
+        </div>
+        <div class="projects">
+          <a href=""><p>Projects</p></a>
+        </div>
+        <div class="contact">
+          <a href=""><p>Projects</p></a>
+        </div>
+        <div class="contact">
+          <a href=""><p>Vymyslim</p></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="greet">
+      <div class="typewriter">
+        <h1>Ahoj, jsem Bohdan Myshko</h1>
+        <span class="kdojsem">
+          <p>Jsem: <span id="whoami"></span> <span id="flickering">|</span></p>
+        </span>
+      </div>
+    </div>
+    <div class="aboutme">
+      <div class="infocard">
+        <div class="view">
+          <h1>&ltO mně/&gt</h1>
+          <div class="hr"></div>
+        </div>
+        <div class="info-text">
+          <p>
+            Jsem studentem <span id="mender">Mendelovy univerzity </span> oboru
+            <b>Otevřená informatika</b> a snažím se najít svoji cestu v IT.
+            Zkouším různé oblasti, ale nejvíc mě baví
+            <b id="web">webový design</b>. Kromě toho se už dlouho věnuji focení
+            a <b>grafice</b> – takže když bude třeba navrhnout ikony nebo
+            vytvořit logo, zvládnu to taky. Ve volném čase se zajímám o 3D tisk
+            a rád hraju na klavír. A když už mám čas na relax, rád si zahraju
+            nějakou tu hru – možná se jednou pustím i do vývoje her.
+          </p>
+          <div class="skills">
+            <div class="element"><img src="img/html.svg" alt="" />HTML</div>
+            <div class="element"><img src="img/css.svg" alt="" />CSS</div>
+            <div class="element"><img src="img/js.svg" alt="" />JavaScript</div>
+
+            <div class="element"><img src="img/cpp.svg" alt="" />C++</div>
+            <div class="element"><img src="img/python.svg" alt="" />Python</div>
+
+            <div class="element"><img src="img/node.png" alt="" />Node.js</div>
+            <div class="element">
+              <img src="img/mongo.svg" alt="" />Mongo DB
+            </div>
+            <div class="element">
+              <img src="img/db.svg" alt="" />SQL(Oracle)
+            </div>
+            <div class="element"><img src="img/ps.svg" alt="" />Photoshop</div>
+            <div class="element">
+              <img src="img/ai.svg" alt="" />Illustrator
+            </div>
+          </div>
+        </div>
+        <div class="view">
+          <div class="hr"></div>
+          <h1>&ltProjekty/&gt</h1>
+        </div>
+        <div class="view-items">
+          <div class="card">
+            <img src="img/trading.jpg" alt="" />
+            <h1>Trading API</h1>
+            <p>
+              Stručný REST API,napsany v node.js který porovnáva cenu krypta na
+              10 burzach a uklada do MongoDB pro budouci dohledani
+            </p>
+          </div>
+          <div class="card">
+            <img src="img/project.png" alt="" />
+            <h1>web</h1>
+            <p>Template pro webovou stranku udelany mnou nekdy davno</p>
+          </div>
+          <div class="card">
+            <img src="img/img-1.png" alt="" />
+            <h1>Blabla</h1>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              Voluptatum, perferendis accusamus.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="hopa">
+      <div class="timeline">
+        <div class="container left">
+          <div class="content">
+            <div class="rah">
+              <h2>2017-2019</h2>
+              <p>ZŠ Morávkova 40</p>
+            </div>
+
+            <img src="img/moravkova.png" alt="" />
+          </div>
+        </div>
+        <div class="container right">
+          <div class="content">
+            <div class="rah">
+              <h2>2019-2023</h2>
+              <p>
+                Gymnázium a Střední odborná škola zdravotnická a ekonomická
+                Vyškov
+              </p>
+            </div>
+            <img src="img/gycovid.png" alt="" />
+          </div>
+        </div>
+        <div class="container left">
+          <div class="content">
+            <div class="rah">
+              <h2>2023-2026</h2>
+              <p>Mendelova univerzita –⁠⁠⁠⁠⁠⁠ Otevřená Informatika</p>
+            </div>
+            <img src="img/pef.png" alt="" />
+          </div>
+        </div>
+      </div>
+      <h1>&ltKontakt/&gt</h1>
+      <form class="forma" action="">
+        <input type="text" class="kontakt" placeholder="Name" />
+        <input type="text" class="kontakt" placeholder="Email" />
+        <input type="text" class="kontakt" placeholder="Poznamka" />
+      </form>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
