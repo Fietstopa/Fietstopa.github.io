@@ -44,3 +44,29 @@ window.addEventListener("mousemove", function (e) {
     { duration: 500, fill: "forwards" }
   );
 });
+const fieldHolders = document.querySelectorAll(".field-holder");
+
+fieldHolders.forEach((fieldHolder) => {
+  const input = fieldHolder.querySelector(".kontakt");
+
+  // Move label up on focus
+  input.addEventListener("focus", () => {
+    fieldHolder.classList.add("clicked");
+  });
+
+  // Check input value on focus out
+  input.addEventListener("blur", () => {
+    if (input.value.trim() === "") {
+      fieldHolder.classList.remove("clicked"); // Remove 'clicked' class if input is empty
+    }
+  });
+
+  // If the input already has value, move label up
+  input.addEventListener("input", () => {
+    if (input.value.trim() !== "") {
+      fieldHolder.classList.add("clicked"); // Keep label up if there's text
+    } else {
+      fieldHolder.classList.remove("clicked"); // Move label back if empty
+    }
+  });
+});
