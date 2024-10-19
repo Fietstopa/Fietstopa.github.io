@@ -20,6 +20,13 @@ body {
   margin: auto;
 }
 
+.navbar img {
+  filter: grayscale(100);
+  position: absolute;
+  height: 50px;
+  opacity: 40%;
+}
+
 .navbar a {
   color: white;
   font-size: 20px;
@@ -154,6 +161,10 @@ body {
   flex-direction: column;
   outline: 2px dotted rgba(250, 250, 250, 0.241);
 }
+.card h1 {
+  font-size: 30px;
+  margin: 15px 0px;
+}
 .card:hover {
   transition-duration: 0.9s;
   transform: scale(1.1);
@@ -207,7 +218,6 @@ html {
     #f3f9a7
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   /* Gradient od jednoho barevného přechodu k druhému */
-  -webkit-background-clip: text; /* Klipování pozadí pro text (pro WebKit prohlížeče) */
   -webkit-text-fill-color: transparent;
 }
 
@@ -331,21 +341,166 @@ html {
 .hopa h1 {
   font-size: 50px;
   color: white;
+  margin-bottom: 40px;
 }
 
+.kontakt {
+  /* oranges! yey */
+  user-select: none;
+}
 .kontakt:focus {
-  border-bottom: 2px solid rgb(125, 5, 169); /* oranges! yey */
+  border-bottom: 2px solid rgb(125, 5, 169);
 }
 .forma {
   display: grid;
   flex-direction: column;
   width: 500px;
   color: white;
-  height: 300px;
+  height: 200px;
   grid-template-rows: 1fr 1fr 1fr;
+  background-color: #1c1c1c88;
 }
 .forma input {
-  all: unset;
+  border: 0; /* oranges! yey */
+  border-bottom: 2px solid rgb(64, 64, 64);
 
   background-color: rgba(255, 222, 173, 0);
+  width: 100%;
+  height: 35px;
+  font-size: 30px;
+  color: white;
+  outline: none;
+}
+
+.field-holder {
+  position: relative;
+  margin-bottom: 30px;
+}
+
+label {
+  position: absolute;
+  top: 0px;
+  left: 0;
+  font-size: 26px;
+}
+
+.callme {
+  background-color: #1c1c1c;
+  background-image: url(img/img-3.png);
+  background-size: cover;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 60px 0px;
+}
+
+.field-holder.clicked label {
+  top: -30px; /* Move label up 40px when clicked */
+  color: #b807cf;
+  transition-duration: 0.2s; /* Optional: Change label color */
+}
+
+.footer {
+  background-color: rgb(22, 22, 22);
+  display: flex;
+  justify-content: space-around;
+  color: white;
+  padding: 30px 0px;
+}
+
+.footer a {
+  color: white;
+  border: 1px solid;
+  border-radius: 5px;
+  font-size: 25px;
+  width: 40px;
+  height: 40px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+
+  margin-right: 10px;
+}
+
+.social {
+  display: flex;
+}
+
+.facebook:hover {
+  background: #4267b2;
+  transition: background 0.2s ease-in-out; /* Ensure the transition is applied */
+}
+
+.linkedin:hover {
+  background-color: #0a66c2;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.instagram:hover {
+  background: linear-gradient(to right, #833ab4, #fd1d1d, #fcb045);
+  transition: background 0.2s ease-in-out; /* Apply the transition specifically to background */
+}
+
+.iko:hover {
+  transition: all 0.2s ease-in-out;
+}
+
+.github:hover {
+  background-color: #2b3137;
+}
+
+.bottom {
+  background-color: black;
+  height: 40px;
+  display: flex;
+  text-align: center;
+  color: rgb(52, 52, 52);
+  justify-content: center;
+  align-items: center;
+}
+
+li {
+  list-style: none;
+}
+
+hr {
+  margin: 15px 0px;
+}
+
+button {
+  width: 60%;
+  margin: auto;
+  border: none;
+  background-color: #7f00ff;
+  padding: 15px;
+  border-radius: 10px;
+  color: white;
+  font-size: 20px;
+} /* General styling for the mobile warning */
+/* General styling for the mobile warning */
+.message {
+  font-size: 48px;
+  color: red;
+  display: none;
+}
+
+@media only screen and (max-width: 1080px) {
+  .navbar,
+  .greet,
+  .aboutme,
+  .hopa,
+  .footer,
+  .bottom {
+    display: none;
+  }
+  .banner {
+    display: flex !important;
+    color: white;
+    font-size: 30px;
+  }
+}
+
+.banner {
+  display: none;
 }
