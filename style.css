@@ -485,23 +485,3 @@ button {
   color: red;
   display: none;
 }
-
-@media only screen and (max-width: 1080px) {
-  .navbar,
-  .greet,
-  .aboutme,
-  .hopa,
-  .footer,
-  .bottom {
-    display: none;
-  }
-  .banner {
-    display: flex !important;
-    color: white;
-    font-size: 30px;
-  }
-}
-
-.banner {
-  display: none;
-}
