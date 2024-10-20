@@ -279,12 +279,16 @@ html {
 .left {
   left: 0;
 }
-
+.open-main-nav {
+  display: none;
+}
 /* Place the container to the right */
 .right {
   left: 50%;
 }
-
+.main-nav {
+  display: none;
+}
 /* Add arrows to the left container (pointing right) */
 .left::before {
   content: " ";
@@ -469,11 +473,11 @@ hr {
   margin: 15px 0px;
 }
 
-button {
+#submit {
   width: 60%;
   margin: auto;
   border: none;
-  background-color: #7f00ff;
+  background-color: #9a06df;
   padding: 15px;
   border-radius: 10px;
   color: white;
@@ -486,22 +490,6 @@ button {
   display: none;
 }
 
-@media only screen and (max-width: 1080px) {
-  .navbar,
-  .greet,
-  .aboutme,
-  .hopa,
-  .footer,
-  .bottom {
-    display: none;
-  }
-  .banner {
-    display: flex !important;
-    color: white;
-    font-size: 30px;
-  }
-}
-
-.banner {
+.navbar-mobile {
   display: none;
 }
