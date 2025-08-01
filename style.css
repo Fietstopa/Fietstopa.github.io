@@ -80,6 +80,9 @@ body {
     opacity: 0;
   }
 }
+.icos img {
+  width: 2rem;
+}
 
 #flickering {
   animation: flickering 1.1s infinite;
@@ -94,6 +97,9 @@ body {
   outline: 2px dotted rgba(243, 243, 243, 0.442);
   border-radius: 20px;
   padding: 40px;
+  max-width: 2000px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .infocard h1 {
@@ -246,6 +252,14 @@ html {
   margin: 50px auto;
 }
 
+.containerok {
+  /* max-width: 2000px;
+  margin: auto; */
+}
+
+.narrow {
+  background-color: red;
+}
 /* The actual timeline (the vertical ruler) */
 .timeline::after {
   content: "";
@@ -450,6 +464,10 @@ label {
 .instagram:hover {
   background: linear-gradient(to right, #833ab4, #fd1d1d, #fcb045);
   transition: background 0.2s ease-in-out; /* Apply the transition specifically to background */
+}
+
+.iko img {
+  width: 2rem;
 }
 
 .iko:hover {
